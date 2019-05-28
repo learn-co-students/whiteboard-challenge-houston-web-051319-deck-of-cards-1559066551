@@ -20,8 +20,8 @@ class Deck
         self.cards.delete(self.cards.sample)
     end
 
-    def add_card(card)
-        self.cards << card
+    def add_cards(cards)
+        self.cards = cards
     end
 
 
@@ -103,13 +103,13 @@ card52 = Card.new('K', 'Spades')
 
 deck1 = Deck.new('first')
 
-deck1.add_card(card1)
-deck1.add_card(card2)
-deck1.add_card(card3)
-deck1.add_card(card4)
-deck1.add_card(card5)
-deck1.add_card(card6)
-deck1.add_card(card7)
+# deck1.add_card(card1)
+# deck1.add_card(card2)
+# deck1.add_card(card3)
+# deck1.add_card(card4)
+
+
+deck1.add_cards(Card.all)
 
 
 
